@@ -24,6 +24,5 @@ public class Parentesis {
         } else {
             System.out.println("No está bien parentizada");
         }
-
     }
 }
