@@ -1,6 +1,6 @@
 public class Digitos {
 
-    public static int contarDigitos(String frase) {
+    public static int cuantosSonDigitos(String frase) {
         int contador = 0;
 
         for (int i = 0; i < frase.length(); i++) {
@@ -14,6 +14,6 @@ public class Digitos {
 
     public static void main(String[] args) {
         String frase = "Hol1s qu3 t4l";
-        System.out.println(contarDigitos(frase));
+        System.out.println(cuantosSonDigitos(frase));
     }
 }
