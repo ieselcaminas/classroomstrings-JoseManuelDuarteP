@@ -1,19 +1,18 @@
 public class Parentesis {
 
     public static boolean esParentizada(String frase) {
-        int parAbierto = 0;
-        int parCerrado = 0;
+        int parentesis = 0;
 
         for (int i = 0; i < frase.length(); i++) {
             if (frase.charAt(i) == '(') {
-                parAbierto++;
+                parentesis++;
             } else if (frase.charAt(i) == ')') {
-                parCerrado++;
+                parentesis--;
             }
+            if (parentesis == -1) break;
         }
 
-        return parAbierto == parCerrado;
-
+        return (parentesis == 0);
     }
 
     public static void main(String[] args) {
@@ -24,5 +23,6 @@ public class Parentesis {
         } else {
             System.out.println("No está bien parentizada");
         }
+
     }
 }
