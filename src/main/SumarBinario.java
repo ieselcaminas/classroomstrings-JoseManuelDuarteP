@@ -32,11 +32,8 @@ public class SumarBinario {
                 }
                 acarreo = 1;
             }
-
         }
-
         if (acarreo == 1) result = "1" + result;
-
 
         return result;
     }
