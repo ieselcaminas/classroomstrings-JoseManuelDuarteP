@@ -21,7 +21,7 @@ public class Parentesis {
     }
 
     public static void main(String[] args) {
-        String frase = "Real Académia Española";
+        String frase = "(Real Académia Española)";
 
         if (esParentizada(frase)) {
             System.out.println("Está bien parentizada");

@@ -1,6 +1,6 @@
-public class SumarBinario {
+public class SumarBinario2 {
 
-    public static String sumaBinario(String bin1, String bin2) {
+    public static String sumaBinario2(String bin1, String bin2) {
         String result = "";
         int acarreo = 0;
         int suma;
@@ -10,28 +10,19 @@ public class SumarBinario {
         for (int i = bin1.length() - 1; i >= 0; i--) {
             digitoX = Integer.parseInt("" + bin1.charAt(i));
             digitoY = Integer.parseInt("" + bin2.charAt(i));
-            suma = digitoX + digitoY;
+            suma = digitoX + digitoY + acarreo;
 
             if (suma == 0) {
-                if (acarreo == 0) {
-                    result = "0" + result;
-                } else {
-                    result = "1" + result;
-                }
+                result = "0" + result;
                 acarreo = 0;
             } else if (suma == 1) {
-                if (acarreo == 0) {
-                    result = "1" + result;
-                } else {
-                    result = "0" + result;
-                }
+                result = "1" + result;
                 acarreo = 0;
+            } else if (suma == 2) {
+                result = "0" + result;
+                acarreo = 1;
             } else {
-                if (acarreo == 0) {
-                    result = "0" + result;
-                } else {
-                    result = "1" + result;
-                }
+                result = "1" + result;
                 acarreo = 1;
             }
         }
@@ -43,6 +34,6 @@ public class SumarBinario {
     public static void main(String[] args) {
         String bin1 = "1010";
         String bin2 = "1010";
-        System.out.println(sumaBinario(bin1, bin2));
+        System.out.println(sumaBinario2(bin1, bin2));
     }
 }
