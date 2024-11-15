@@ -4,6 +4,7 @@ public class SumarBinario {
         String result = "";
         int acarreo = 0;
         int suma;
+
         for (int i = bin1.length() - 1; i >= 0; i--) {
             int digitoX = Integer.parseInt("" + bin1.charAt(i));
             int digitoY = Integer.parseInt("" + bin2.charAt(i));
@@ -34,9 +35,8 @@ public class SumarBinario {
 
         }
 
-        if (acarreo == 1) {
-            result = "1" + result;
-        }
+        if (acarreo == 1) result = "1" + result;
+
 
         return result;
     }
