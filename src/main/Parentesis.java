@@ -12,11 +12,7 @@ public class Parentesis {
             }
         }
 
-        if (parAbierto == parCerrado) {
-            return true;
-        } else {
-            return false;
-        }
+        return parAbierto == parCerrado;
 
     }
 
