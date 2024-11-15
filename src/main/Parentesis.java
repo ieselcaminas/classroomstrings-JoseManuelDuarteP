@@ -9,7 +9,7 @@ public class Parentesis {
             } else if (frase.charAt(i) == ')') {
                 parentesis--;
             }
-            if (parentesis == -1) break;
+            if (parentesis == -1) return false;
         }
 
         return (parentesis == 0);
